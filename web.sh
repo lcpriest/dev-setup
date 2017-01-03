@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Install command-line tools using Homebrew.
 
@@ -23,9 +23,13 @@ brew install node
 # Remove outdated versions from the cellar.
 brew cleanup
 
-npm install -g coffee-script
-npm install -g grunt-cli
 npm install -g jshint
-npm install -g less
+npm install -g jslint
+npm install -g eslint
+npm install -g scss_lint
+npm install -g bower
+npm install -g ember-cli
+npm install -g npm-check-updates
 
-#gem install jekyll
+gem install middleman rails foreman sidekiq rake --no-ri --no-rdoc
+gem install bundle --pre  --no-ri --no-rdoc

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # ~/osx.sh — Originally from https://mths.be/osx
 
@@ -114,8 +114,8 @@ sudo systemsetup -setcomputersleep Off > /dev/null
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-# Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# Enable Notification Center and remove the menu bar icon
+launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -431,13 +431,13 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulat
 # 11: Launchpad
 # 12: Notification Center
 # Top left screen corner → Mission Control
-defaults write com.apple.dock wvous-tl-corner -int 2
+defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → Desktop
-defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-corner -int 0
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Start screen saver
-defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ###############################################################################

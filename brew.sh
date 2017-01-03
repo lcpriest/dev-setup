@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Install command-line tools using Homebrew.
 
@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -45,16 +45,6 @@ chsh -s /usr/local/bin/bash
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
-# Install Python
-brew install python
-brew install python3
-
 # Install ruby-build and rbenv
 brew install ruby-build
 brew install rbenv
@@ -70,40 +60,13 @@ brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
-brew install xz
+# Install ember tools
+brew install watchman
 
 # Install other useful binaries.
 brew install ack
-brew install dark-mode
-#brew install exiv2
+brew install certbot
 brew install git
 brew install git-lfs
 brew install git-flow
@@ -143,28 +106,25 @@ brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" hyperdock
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
-
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
-
-# Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+brew cask install --appdir="/Applications" minecraft
+brew cask install --appdir="/Applications" airmail-beta
+brew cask install --appdir="/Applications" licecap
+brew cask install --appdir="/Applications" cloak
+brew cask install --appdir="/Applications" dash
+brew cask install --appdir="/Applications" imageoptim
+brew cask install --appdir="/Applications" postgres
+brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" transmission
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
