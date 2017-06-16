@@ -26,7 +26,6 @@ brew cleanup
 npm install -g jshint
 npm install -g jslint
 npm install -g eslint
-npm install -g scss_lint
 npm install -g bower
 npm install -g ember-cli
 npm install -g npm-check-updates
