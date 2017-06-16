@@ -63,6 +63,15 @@ function runDots() {
             echo ""
             ./setup_zsh.sh
         fi
+
+        if [ $ARG == "repos" ] || [ $ARG == "all" ]; then
+            echo ""
+            echo "------------------------------"
+            echo "Setting up repos on your local machine."
+            echo "------------------------------"
+            echo ""
+            ./setup_repos.sh
+        fi
         # if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
         #     # Run the pydata.sh Script
         #     echo "------------------------------"
