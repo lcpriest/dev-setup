@@ -1,0 +1,40 @@
+{
+  "auto_upgrade_last_run": null,
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "Agila Theme",
+    "Alignment",
+    "All Autocomplete",
+    "Babel",
+    "BeautifyRuby",
+    "Better CoffeeScript",
+    "Boxy Theme",
+    "Elixir",
+    "ERB Autocomplete",
+    "ERB Snippets",
+    "Git",
+    "GitGutter",
+    "GitHubinator",
+    "Handlebars",
+    "HTMLBeautify",
+    "Indent XML",
+    "JavaScriptNext - ES6 Syntax",
+    "JSON Reindent",
+    "JSONLint",
+    "Markdown Preview",
+    "Package Control",
+    "Pretty JSON",
+    "RubyTest",
+    "SCSS",
+    "SideBarEnhancements",
+    "SublimeLinter",
+    "SublimeLinter-contrib-eslint",
+    "SublimeLinter-jshint",
+    "Theme - Lanzhou",
+    "Theme - Soda"
+  ]
+}
