@@ -353,8 +353,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items to 48 pixels
+defaults write com.apple.dock tilesize -int 48
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
@@ -371,7 +371,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-#defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
@@ -689,8 +689,8 @@ defaults write com.apple.TextEdit RichText -int 0
 # Open and save files as UTF-8 in TextEdit
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
-# Set tab width to 4 instead of the default 8
-defaults write com.apple.TextEdit "TabWidth" '4'
+# Set tab width to 2 instead of the default 8
+defaults write com.apple.TextEdit "TabWidth" '2'
 
 # Enable the debug menu in Disk Utility
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
@@ -774,6 +774,16 @@ defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
 # Install Sublime Text settings
 cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+# Install Sublime package control
+cp -r init/Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text*/Installed\ Packages 2> /dev/null
+
+# Install Sublime packages
+cp -r init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/ 2> /dev/null
+
+# Install Fonts
+cp -a fonts/. ~/Library/Fonts 2> /dev/null
+
 
 ###############################################################################
 # Transmission.app                                                            #
