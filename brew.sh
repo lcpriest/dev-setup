@@ -101,7 +101,7 @@ heroku update
 # Core casks
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
+# brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
@@ -109,25 +109,33 @@ brew cask install --appdir="/Applications" sublime-text
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
-# brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" firefox
 # brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 # brew cask install --appdir="/Applications" hyperdock
 brew cask install --appdir="/Applications" dropbox
-# brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" controlplane
+brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" minecraft
 # brew cask install --appdir="/Applications" airmail-beta
 brew cask install --appdir="/Applications" licecap
+brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" cloak
 brew cask install --appdir="/Applications" dash
+brew cask install --appdir="/Applications" balsamiq-mockups
+brew cask install --appdir="/Applications" franz
 brew cask install --appdir="/Applications" imageoptim
 brew cask install --appdir="/Applications" postgres
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" spotify
-# brew cask install --appdir="/Applications" gitx
+brew cask install --appdir="/Applications" radarr
+brew cask install --appdir="/Applications" sonarr
+brew cask install --appdir="/Applications" gitx
+brew cask install --appdir="/Applications" bettertouchtool
+brew cask install --appdir="/Applications" zoomus
 # brew cask install --appdir="/Applications" airmail-beta
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
