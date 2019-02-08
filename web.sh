@@ -23,12 +23,16 @@ brew install node
 # Remove outdated versions from the cellar.
 brew cleanup
 
-npm install -g jshint
-npm install -g jslint
-npm install -g eslint
-npm install -g bower
 npm install -g ember-cli
+npm install -g eslint
+npm install -g mjml
 npm install -g npm-check-updates
+npm install -g stylefmt
+npm install -g stylelint
+npm install -g typescript
+npm install -g svgo
+npm install -g yarn
+npm install -g zapier-platform-cli
 
 gem install middleman rails foreman sidekiq rake --no-ri --no-rdoc
 gem install bundle --pre  --no-ri --no-rdoc
